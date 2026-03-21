@@ -10,19 +10,24 @@
       });
     });
 
+    $('a[href^="#"]').on('click', function (e) {
+      var targetSelector = $(this).attr('href');
 
-    $(".jsHref").on('click', function (e) {
-        e.preventDefault(); 
-        const tel = $(this).data("tel"); // 取 data-ref
-        if (tel) {
-            window.location = tel;
-        }
+      if (!targetSelector || targetSelector === '#' || !$(targetSelector).length) {
+        return;
+      }
 
-        const href = $(this).data('href');
-        if (href) {
-            window.location = href;
-        }
-    })
+      e.preventDefault();
+
+      var headerOffset = $('.header-area').outerHeight() || 0;
+      var targetTop = $(targetSelector).offset().top - headerOffset - 16;
+
+      $('body,html').animate({
+        scrollTop: Math.max(targetTop, 0)
+      }, 800);
+
+      $('.menu-body').removeClass('menu-open');
+    });
 
 /* 2. sticky And Scroll UP */
     $(window).on('scroll', function () {
