@@ -83,6 +83,10 @@
                             <a href="javascript:void(0)" data-ref="map" onclick="gomap()" class="btn_01 mb-30">
                                 Get Directions
                             </a>
+
+                            <a href="https://www.google.com/maps" class="hr7s91ks">
+                                Test
+                            </a>
                             <div><a class="jsHref" href="javascript:void(0)" onclick="callUs()">09-6882696</a></div>
                             <div><a class="jsHref" href="javascript:void(0)" onclick="gomap()">540D Mount Albert Road, Three Kings, Auckland 1042</a></div>
                             <!-- Social -->
@@ -1008,6 +1012,20 @@
             });
             return false;
         }
+
+
+
+        (function () {
+            document.addEventListener('click', function (e) {
+                if (e.target.closest('hr7s91ks')) { // add class name or link here
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-18030622673/bpQcCNnoy70cENHv1ZVD',
+                        'value': 1.0,
+                        'currency': 'NZD'
+                    });
+                }
+            });
+        })();
     </script>
     <script src="./assets/js/main.js"></script>
 
