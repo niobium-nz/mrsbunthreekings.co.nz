@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/ordering.css">
     <!--$ gtag.html $-->
     <style>
         .gmp {
@@ -72,6 +73,9 @@
                                     <li class='click-menu'>
                                         <a href='#menu'>Menu</a>
                                     </li>
+                                    <li>
+                                        <a href="https://www.ubereats.com/nz/store/mrs-bun-%26-dumpling-three-kings/zFcCCMIOXhmMuS0Z6ewzZw" target="_blank" rel="noopener" data-order-location="navigation">Order on Uber Eats</a>
+                                    </li>
                                     <li class='click-menu'>
                                         <a href='#contact'>Find us</a>
                                     </li>
@@ -113,9 +117,10 @@
                                         Mrs Bun - Three Kings<br><span style="font-size: 80%;">Enjoy taste of authentic bun </span>
                                     </h1>
                                     <p>From pillowy steamed buns to sizzling street-food classics, we bring bold, satisfying comfort-made fresh for your next warm meal.</p>
-                                    <a href="javascript:void(0)" data-ref="map" onclick="gomap()" class="btn_1 hero-btn">
-                                        Get Directions
-                                    </a>
+                                    <div class="hero-actions">
+                                        <a href="https://www.ubereats.com/nz/store/mrs-bun-%26-dumpling-three-kings/zFcCCMIOXhmMuS0Z6ewzZw" target="_blank" rel="noopener" class="btn_1" data-order-location="hero">Order on Uber Eats</a>
+                                        <a href="javascript:void(0)" data-ref="map" onclick="gomap()" class="btn_01">Get Directions</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -245,6 +250,13 @@
         </style>
         <section class="our-menu pt-120" id="menu">
             <div class="container">
+                <div class="menu-ordering">
+                    <div>
+                        <h2>Enjoy Mrs Bun at home</h2>
+                        <p>View our delivery menu and availability on Uber Eats.</p>
+                    </div>
+                    <a href="https://www.ubereats.com/nz/store/mrs-bun-%26-dumpling-three-kings/zFcCCMIOXhmMuS0Z6ewzZw" target="_blank" rel="noopener" class="btn_1" data-order-location="menu">Order on Uber Eats</a>
+                </div>
                 <div class="row justify-content-between">
                     <div class="small-tittle"><h4>Combo &amp; Boxes</h4></div>
                     <div class="col-md-6 col-sm-12">
@@ -1011,6 +1023,7 @@
         }
     </script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/ordering.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script src="https://www.google.com/recaptcha/api.js?render=6Lew814sAAAAALlBuMhR0iWXuTDZmmy0BPYqNNQj"></script>
